@@ -4,11 +4,18 @@
     --brand-primary: #121214; 
     --brand-secondary: #202024;
     --white: #FFF;
+    --shadow: 0px 5px 15px rgba(0, 0, 0, .7);
+    --border-radius: 10px;
+    --font-size-large: 80px;
+    --font-size-medium: 30px;
+    --font-size-small: 15px;
+    --font-weight-bold: bolder;
 }
 
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -18,17 +25,19 @@ body {
     align-items: center;
     justify-content: center;
     background: var(--brand-primary);
+    color: var(--white);
+}
+
+.title, #data {
+    display: flex;
+    justify-content: center;
+    font-weight: var(--font-weight-bold);
+    position: fixed;
 }
 
 .title {
-    font-size: 30px;
-    color: var(--white);
-    display: flex;
-    justify-content: center;
-    font-weight: bolder;
-    position: fixed;
+    font-size: var(--font-size-medium);
     top: 15%;
-    right:auto;
 }
 
 .relogiodigital {
@@ -37,47 +46,40 @@ body {
     align-items: center;
     justify-content: space-around;
     background: transparent;
-    border-radius: 5px;
+    border-radius: var(--border-radius);
+}
+
+.relogiodigital div, #data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-secondary);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    letter-spacing: 5px;
 }
 
 .relogiodigital div {
     height: 270px;
     width: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--white);
-    background: var(--brand-secondary);
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, .7);
-    border-radius: 10px;
-    letter-spacing: 5px;
 }
 
 .relogiodigital span {
-    font-weight: bolder;
-    font-size: 80px;
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-large);
 }
 
 .relogiodigital span.horario {
-    font-size: 15px;
+    font-size: var(--font-size-small);
 }
 
 #data {
     padding: 20px;
-    font-size: 30px;
-    color: var(--white);
-    background: var(--brand-secondary);
-    border-radius: 10px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, .7);
-    display: flex;
-    justify-content: center;
+    font-size: var(--font-size-medium);
     width: 30%;
-    min-width: 800px;
-    font-weight: bolder;
-    position: fixed;
-    top: 75%;
-    right:auto;
+    min-width: 775px;
+    top: 80%;
 }
 
 @media (max-width: 780px) {
@@ -92,7 +94,6 @@ body {
     }
 
     .relogiodigital span {
-        font-weight: bolder;
         font-size: 60px;
     }
     
@@ -101,10 +102,9 @@ body {
     }
 
     #data {
-        width: 10%;
+        width: 80%;
         min-width: 90%;
-        position: fixed;
-        top: 65%;
-        right:auto;
+        top: 70%;
+        font-size: var(--font-size-small);
     }
- }
+}
