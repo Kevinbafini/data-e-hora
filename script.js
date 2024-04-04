@@ -28,3 +28,7 @@ const relogiodigital = setInterval(function time() {
 
     data.innerHTML = `${diaDaSemanaEscrito}, ${diaDaSemanaNumero} de ${mesEscrito} de ${anoNumerico}`
 })
+
+
+
+
