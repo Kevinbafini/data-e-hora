@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root {
+    --brand-primary: #121214; 
+    --brand-secondary: #202024;
+    --white: #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--brand-primary);
+}
+
+.relogiodigital {
+    height: 400px;
+    width: 850px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.relogiodigital div {
+    height: 270px;
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    background: var(--brand-secondary);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    letter-spacing: 5px;
+}
+
+.relogiodigital span {
+    font-weight: bolder;
+    font-size: 80px;
+}
+
+.relogiodigital span.horario {
+    font-size: 15px;
+}
