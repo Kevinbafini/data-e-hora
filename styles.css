@@ -69,3 +69,27 @@ body {
     top: 70%;
     right:auto;
 }
+
+@media (max-width: 780px) {
+    .relogiodigital div {
+        height: 160px;
+        width: 150px;
+    }
+
+    .relogiodigital span {
+        font-weight: bolder;
+        font-size: 60px;
+    }
+    
+    .relogiodigital span.horario {
+        font-size: 10px;
+    }
+
+    #data {
+        width: 10%;
+        min-width: 90%;
+        position: fixed;
+        top: 65%;
+        right:auto;
+    }
+ }
