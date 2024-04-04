@@ -52,3 +52,20 @@ body {
 .relogiodigital span.horario {
     font-size: 15px;
 }
+
+#data {
+    padding: 20px;
+    font-size: 20px;
+    color: var(--white);
+    background: var(--brand-secondary);
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    width: 30%;
+    min-width: 850px;
+    font-weight: bolder;
+    position: fixed;
+    top: 70%;
+    right:auto;
+}
