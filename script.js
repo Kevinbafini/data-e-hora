@@ -29,6 +29,24 @@ const relogiodigital = setInterval(function time() {
     data.innerHTML = `${diaDaSemanaEscrito}, ${diaDaSemanaNumero} de ${mesEscrito} de ${anoNumerico}`
 })
 
+document.addEventListener('DOMContentLoaded', () => {
+    const checkbox = document.getElementById('checkbox');
+    const bodyElement = document.body;
 
+    checkbox.addEventListener('change', function() {
+        if(this.checked) {
+            bodyElement.classList.add('light-theme');
+        } else {
+            bodyElement.classList.remove('light-theme');
+        }
+        localStorage.setItem('theme', this.checked ? 'light-theme' : '');
+    });
 
-
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+        bodyElement.classList.add(currentTheme);
+        if (currentTheme === 'light-theme') {
+            checkbox.checked = true;
+        }
+    }
+});
