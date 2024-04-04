@@ -20,6 +20,17 @@ body {
     background: var(--brand-primary);
 }
 
+.title {
+    font-size: 30px;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    font-weight: bolder;
+    position: fixed;
+    top: 15%;
+    right:auto;
+}
+
 .relogiodigital {
     width: 850px;
     display: flex;
@@ -70,6 +81,11 @@ body {
 }
 
 @media (max-width: 780px) {
+    .title {
+        font-size: 20px;
+        top: 25%;
+    }
+
     .relogiodigital div {
         height: 160px;
         width: 150px;
