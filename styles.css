@@ -74,9 +74,13 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: #000000;
     transition: .4s;
     border-radius: 50%;
+}
+
+.slider:before, .light-theme {
+    background-color: #ffffff;
 }
 
 input:checked + .slider {
