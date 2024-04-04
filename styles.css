@@ -74,14 +74,29 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #000000;
     transition: .4s;
     border-radius: 50%;
 }
 
-.slider:before, .light-theme {
-    background-color: #ffffff;
+/* cor da bolinha do botão de troca de tema. */
+
+.theme-switch input + .slider:before {
+    content: "☽"; 
+    line-height: 26px; 
+    text-align: center; 
+    color: #FFF; 
+    background-color: #000; 
+    border-radius: 50%;
 }
+
+
+body.light-theme .theme-switch input + .slider:before {
+    content: "\2600";
+    color: #000; 
+    background-color: #fff; 
+
+}
+
 
 input:checked + .slider {
     background-color: #121214;
