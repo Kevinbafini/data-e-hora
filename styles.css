@@ -172,6 +172,7 @@ body.light-theme .theme-switch input + .slider:before {
     min-width: 785px;
     top: 80%;
 }
+
 /* a href */
 
 a {
