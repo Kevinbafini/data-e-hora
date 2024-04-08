@@ -35,7 +35,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 </div>
 
 ## Autor
----
 
 <h3 font-weight: 900;>Feito por Kevin Bafini</h3>
 
