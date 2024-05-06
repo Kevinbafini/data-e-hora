@@ -36,7 +36,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## Autor
 
-<h3 font-weight: 900;>Feito por Kevin Bafini</h3>
+<h3 font-weight: 900;>Kevin Bafini</h3>
 
 
 [![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kevinbafini/)
