@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 :root {
-    --brand-primary: #121214; 
+    --brand-primary: #121214;
     --brand-secondary: #202024;
     --white: #FFF;
     --shadow: 0px 5px 15px rgba(0, 0, 0, .7);
     --border-radius: 10px;
     --font-size-large: 80px;
     --font-size-medium: 30px;
-    --font-size-small: 17px;
+    --font-size-small: 16px;
     --font-weight-bold: bolder;
 }
 
@@ -31,7 +31,7 @@ body {
 /* Botão de Tema */
 
 .light-theme {
-    --brand-primary: #ffffff; 
+    --brand-primary: #ffffff;
     --brand-secondary: #f0f0f0;
     --white: #000000;
 }
@@ -51,7 +51,7 @@ body {
     height: 34px;
 }
 
-.theme-switch input { 
+.theme-switch input {
     display: none;
 }
 
@@ -78,11 +78,11 @@ body {
     border-radius: 50%;
 }
 
-input:checked + .slider {
+input:checked+.slider {
     background-color: #121214;
 }
 
-input:checked + .slider:before {
+input:checked+.slider:before {
     transform: translateX(26px);
 }
 
@@ -96,26 +96,27 @@ input:checked + .slider:before {
 
 /* cor e emoji da bolinha do botão de troca de tema. */
 
-.theme-switch input + .slider:before {
-    content: "☽"; 
-    line-height: 26px; 
-    text-align: center; 
-    color: #FFF; 
-    background-color: #000; 
+.theme-switch input+.slider:before {
+    content: "☽";
+    line-height: 26px;
+    text-align: center;
+    color: #FFF;
+    background-color: #000;
     border-radius: 50%;
 }
 
 
-body.light-theme .theme-switch input + .slider:before {
+body.light-theme .theme-switch input+.slider:before {
     content: "☀︎";
-    color: #000; 
-    background-color: #fff; 
+    color: #000;
+    background-color: #fff;
 
 }
 
 /* Title */
 
-.title, #data {
+.title,
+#data {
     display: flex;
     justify-content: center;
     font-weight: var(--font-weight-bold);
@@ -138,7 +139,8 @@ body.light-theme .theme-switch input + .slider:before {
     border-radius: var(--border-radius);
 }
 
-.relogiodigital div, #data {
+.relogiodigital div,
+#data {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,11 +178,11 @@ body.light-theme .theme-switch input + .slider:before {
 /* a href */
 
 a {
-  top: 97%;
-  color: var(--text-color); 
-  font-weight: bold; 
-  display: flex;
-  position: absolute;
+    top: 97%;
+    color: var(--text-color);
+    font-weight: bold;
+    display: flex;
+    position: absolute;
 }
 
 /* Responsividade */
@@ -200,7 +202,7 @@ a {
     .relogiodigital span {
         font-size: 60px;
     }
-    
+
     .relogiodigital span.horario {
         font-size: 10px;
     }
@@ -229,7 +231,7 @@ a {
     .relogiodigital span {
         font-size: 40px;
     }
-    
+
     .relogiodigital span.horario {
         font-size: 10px;
     }
@@ -244,6 +246,12 @@ a {
     }
 
     a {
-      font-size: 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #data {
+        font-size: 10px;
     }
 }
